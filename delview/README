@@ -1,0 +1,12 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=5109
+
+vim has the ability to save and load views with the mkview/loadview files, which are used in some tips as such:
+
+  au BufWinLeave ?* mkview
+  au BufWinEnter ?* silent loadview
+
+Unfortunately there is one piece of functionality missing, the ability to delete or clear these views.  Currently you need to either use ':autoload edit <file>' to open the file without a view and then save that as a new view, or else you need to figure out where the vim 'views' directory is and manually delete the files with a file explorer or shell.
+
+This script gives you the simple command to delete the views for the current buffer:
+
+  :delview
