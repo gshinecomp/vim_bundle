@@ -536,6 +536,8 @@ let s:tlist_def_vera_settings = 'vera;c:class;d:macro;e:enumerator;' .
 "verilog language
 let s:tlist_def_verilog_settings = 'verilog;m:module;c:constant;P:parameter;' .
             \ 'e:event;r:register;t:task;w:write;p:port;v:variable;f:function'
+let s:tlist_def_verilog_sv_settings = 'verilog;m:module;c:constant;P:parameter;' .
+            \ 'e:event;r:register;t:task;w:write;p:port;v:variable;f:function'
 
 " VHDL
 let s:tlist_def_vhdl_settings = 'vhdl;c:constant;t:type;T:subtype;r:record;e:entity;f:function;p:procedure;P:package'

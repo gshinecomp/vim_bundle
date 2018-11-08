@@ -53,9 +53,9 @@ patch ~/.vim/bundle/mru.vim/plugin/mru.vim <<EOF
  " Files to exclude from the MRU list
 EOF
 
-# diff -aur ~/.vim/bundle/verilog_systemverilog.vim verilog_systemverilog.vim
-patch ~/.vim/bundle/verilog_systemverilog.vim <<EOF
-diff -aur /home/erik/.vim/bundle/verilog_systemverilog.vim/ftdetect/verilog_systemverilog.vim verilog_systemverilog.vim/ftdetect/verilog_systemverilog.vim
+## diff -aur ~/.vim/bundle/verilog_systemverilog.vim verilog_systemverilog.vim
+#diff -aur /home/erik/.vim/bundle/verilog_systemverilog.vim/ftdetect/verilog_systemverilog.vim verilog_systemverilog.vim/ftdetect/verilog_systemverilog.vim
+patch ~/.vim/bundle/verilog_systemverilog.vim/ftdetect/verilog_systemverilog.vim <<EOF
 --- /home/erik/.vim/bundle/verilog_systemverilog.vim/ftdetect/verilog_systemverilog.vim	2018-10-17 16:47:23.827083799 +0800
 +++ verilog_systemverilog.vim/ftdetect/verilog_systemverilog.vim	2018-11-08 16:14:45.881692846 +0800
 @@ -1,4 +1,5 @@
@@ -65,7 +65,9 @@ diff -aur /home/erik/.vim/bundle/verilog_systemverilog.vim/ftdetect/verilog_syst
 -au! BufNewFile,BufRead *.v,*.vh,*.vp,*.sv,*.svi,*.svh,*.svp,*.sva setfiletype verilog_systemverilog
 +" by erik: rename and change original verilog_systemverilog.vim and mark original file
 +"au! BufNewFile,BufRead *.v,*.vh,*.vp,*.sv,*.svi,*.svh,*.svp,*.sva setfiletype verilog_systemverilog
-diff -aur /home/erik/.vim/bundle/verilog_systemverilog.vim/plugin/verilog_systemverilog.vim verilog_systemverilog.vim/plugin/verilog_systemverilog.vim
+EOF
+#diff -aur /home/erik/.vim/bundle/verilog_systemverilog.vim/plugin/verilog_systemverilog.vim verilog_systemverilog.vim/plugin/verilog_systemverilog.vim
+patch ~/.vim/bundle/verilog_systemverilog.vim/plugin/verilog_systemverilog.vim <<EOF
 --- /home/erik/.vim/bundle/verilog_systemverilog.vim/plugin/verilog_systemverilog.vim	2018-11-08 13:34:23.415761820 +0800
 +++ verilog_systemverilog.vim/plugin/verilog_systemverilog.vim	2018-11-08 16:41:34.816241129 +0800
 @@ -27,7 +27,7 @@
