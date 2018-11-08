@@ -27,7 +27,7 @@ command! -nargs=+ -complete=customlist,verilog_systemverilog#CompleteCommand
 
 " Configure tagbar
 " This requires a recent version of universal-ctags
-let g:tagbar_type_verilog_systemverilog = {
+let g:tagbar_type_verilog_sv = {
     \ 'ctagstype'   : 'SystemVerilog',
     \ 'kinds'       : [
         \ 'b:blocks:1:1',
